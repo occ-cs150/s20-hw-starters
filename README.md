@@ -1,2 +1,2 @@
-# f19-hw-starters
-Starter Code for CS 150 Fall 2019
+# s20-hw-starters
+Starter Code for CS 150 Spring 2020
