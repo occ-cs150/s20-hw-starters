@@ -1,4 +1,4 @@
-EXE = h01
+EXE = h03
 CXX = @g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Werror -O0 -ggdb3 -fsanitize=signed-integer-overflow -fsanitize=undefined -Wno-unused-parameter -Wno-unused-variable -Wshadow
 LIBS = $(EXE)
@@ -25,11 +25,7 @@ stest: $(EXE)
 	@./$(EXE) $(EXE).tests
 
 itest test: $(EXE)
-	@git add $(SRC) > /dev/null 2> errors.txt; true
-	@git commit -m "auto commit `date +"%x %X"`"  > /dev/null 2>> errors.txt; true
-	@cat errors.txt 2> /dev/null; true
 	@./$(EXE) -i
-	@rm -rf errors.txt 2> /dev/null; true
 
 submit: $(EXE)
 	@./$(EXE) -i 1> /dev/null 2> results.txt; true

@@ -24,15 +24,15 @@ debug: $(EXE)
 stest: $(EXE)
 	@./$(EXE) $(EXE).tests
 
-test: $(EXE)
+itest test: $(EXE)
 	@git add $(SRC) > /dev/null 2> errors.txt; true
 	@git commit -m "auto commit `date +"%x %X"`"  > /dev/null 2>> errors.txt; true
 	@cat errors.txt 2> /dev/null; true
-	@./$(EXE) -t
+	@./$(EXE) -i
 	@rm -rf errors.txt 2> /dev/null; true
 
 submit: $(EXE)
-	@./$(EXE) -t 1> /dev/null 2> results.txt; true
+	@./$(EXE) -i 1> /dev/null 2> results.txt; true
 	@git add $(SRC) results.txt > /dev/null 2> errors.txt; true
 	@git commit -m "auto commit `date +"%x %X"`"  > /dev/null 2>> errors.txt; true
 	@git push > /dev/null 2>> errors.txt; true
