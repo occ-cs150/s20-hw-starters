@@ -1,4 +1,4 @@
-EXE = h03
+EXE = h04
 CXX = @g++
 CXXFLAGS = -std=c++17 -Wall -Wextra -Werror -O0 -ggdb3 -fsanitize=signed-integer-overflow -fsanitize=undefined -Wno-unused-parameter -Wno-unused-variable -Wshadow
 LIBS = $(EXE)
