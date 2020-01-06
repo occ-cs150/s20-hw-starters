@@ -1,0 +1,44 @@
+INSTRUCTOR TESTING H09--sgilbert
+----------------------------------------------------------------------
+Checking function: Tests for toRoman() -------------------
+   + toRoman(0)->OUT OF RANGE
+   + toRoman(613)->DCXIII
+   + toRoman(3010)->MMMX
+   + toRoman(835)->DCCCXXXV
+   + toRoman(2084)->MMLXXXIV
+   + toRoman(4250)->OUT OF RANGE
+   + toRoman(2652)->MMDCLII
+   + toRoman(1625)->MDCXXV
+   + toRoman(49)->XLIX
+   + toRoman(654)->DCLIV
+----------------------------------------------------------------------
+  Tests passing 10/10 (100%).
+
+Checking function: Tests for ones() -------------------
+   + ones(5)->V
+   + ones(8)->VIII
+   + ones(3)->III
+   + ones(9)->IX
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+Checking function: Tests for tens() -------------------
+   + tens(9)->XC
+   + tens(1)->X
+   + tens(5)->L
+   + tens(2)->XX
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+Checking function: Tests for hundreds() -------------------
+   + hundreds(1)->C
+   + hundreds(3)->CCC
+   + hundreds(4)->CD
+   + hundreds(8)->DCCC
+----------------------------------------------------------------------
+  Tests passing 4/4 (100%).
+
+----------------------------------------------------------------------
+INSTRUCTOR TESTS H09:sgilbert: ALL TESTS -- PASS 22/22 (100%).
+----------------------------------------------------------------------
+MTU3ODM1Mzk1NTpzZ2lsYmVydDpIMDk6MTAwLjAwJQ==
