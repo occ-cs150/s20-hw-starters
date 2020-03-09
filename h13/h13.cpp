@@ -41,6 +41,8 @@ string dataSets(const string& fname)
             + ": total values = " + to_string(count)
             + "naverage value = " + to_string(sum)
             + "\n\n";
+        dataset++;
+        in >> repeat;
     }
 
     return result;
