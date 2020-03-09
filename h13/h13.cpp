@@ -39,7 +39,7 @@ string dataSets(const string& fname)
         }
         result += "data set " + to_string(dataset)
             + ": total values = " + to_string(count)
-            + "\naverage value = " + to_string(sum)
+            + "\naverage value = " + to_string(sum / count)
             + "\n\n";
         dataset++;
         in >> repeat;
