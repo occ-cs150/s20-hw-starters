@@ -42,8 +42,9 @@ string dataSets(const string& fname)
         //     + ": total values = " + to_string(count)
         //     + "\naverage value = " + to_string(sum / count)
         //     + "\n\n";
+        if (dataset > 1) out << endl;
         out << "data set " << dataset << ": total values = " << count << endl
-            << "average value = " << (sum / count) << endl << endl;
+            << "average value = " << (sum / count) << endl;
         dataset++;
         in >> repeat;
     }
