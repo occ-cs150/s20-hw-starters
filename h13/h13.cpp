@@ -35,6 +35,7 @@ string dataSets(const string& fname)
             in >> value;
             count += repeat;
             sum += repeat * value;
+            in >> repeat;
         }
         result += "data set  " + to_string(dataset)
             + ": total values = " + to_string(count)
