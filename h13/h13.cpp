@@ -19,7 +19,7 @@ string dataSets(const string& fname)
 {
     string result;
     ifstream in(fname);
-    if (in.fail()) { return fname + " cannot be found."; }
+    if (in.fail()) { return fname + " cannot be opened."; }
     ostringstream out;
     out << fixed << setprecision(4);
     // 3 4.5 2 9.8 7 4.5 0 4 2.7 5 3.9 0 2 3.2 4 7.1 0
