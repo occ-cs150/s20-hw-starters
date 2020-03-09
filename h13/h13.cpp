@@ -37,7 +37,7 @@ string dataSets(const string& fname)
             sum += repeat * value;
             in >> repeat;
         }
-        result += "data set  " + to_string(dataset)
+        result += "data set " + to_string(dataset)
             + ": total values = " + to_string(count)
             + "\naverage value = " + to_string(sum)
             + "\n\n";
@@ -48,6 +48,8 @@ string dataSets(const string& fname)
     return result;
 }
 
+// data set 1: total values = 9
+//
 
 
 ///////////////// Student Testing /////////////////////////
