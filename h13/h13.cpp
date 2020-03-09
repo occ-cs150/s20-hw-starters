@@ -36,7 +36,10 @@ string dataSets(const string& fname)
             count += repeat;
             sum += repeat * value;
         }
-
+        result += "data set  " + to_string(dataset)
+            + ": total values = " + to_string(count)
+            + "naverage value = " + to_string(sum)
+            + "\n\n";
     }
 
     return result;
